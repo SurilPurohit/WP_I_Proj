@@ -1,0 +1,156 @@
+.sidenav {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    float: left;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+  .sidenav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+  .flex-container {
+    display: flex;
+    float:right;
+    width: 78%;
+    padding: 6px 8px 6px 6px;
+    flex-direction: column;
+  }
+  
+  .flex-container > div{
+    background-color:#333;
+    color: white;
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    line-height: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .flex-container >p 
+  {
+      padding: 2%;
+      margin: 2%;
+  }
+  .flex-container > div >img
+  {
+    padding: 3%;
+    float: left;
+    height: 40%;
+    width: 30%;
+  }
+  .flex-container >div >img :hover
+  {
+    opacity: 0.2;
+  }
+  * {box-sizing:border-box}
+    .slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    }
+    .mySlides {
+    display: none;
+    }
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+    .fade {
+    animation-duration: 1.5s;
+    }
+
+    .form1
+  {
+      border: 2px solid #333;
+      border-radius: 30px;
+      padding: 12px 20px 12px 40px;
+      transition: width 0.4s ease-in-out;
+  }
+  .form1 label
+  {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: black;
+    height: 30px;
+  }
+
+ input[name = Name]{
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 30px;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[name = Name]:focus{ 
+  width: 40%; 
+}

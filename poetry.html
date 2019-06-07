@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/b.jpg.png" size="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href ="CssFiles/res1.css">
+    <link rel = "stylesheet" href ="CssFiles/navbar.css">
+    <title>Poetry by Love and Cheesecake</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class ="logo">
+        <img src ="images/b.jpg.png">
+    </div>
+    <div class ="navbar" style="position: sticky; top:0; width: 100%;">
+        <a href ="index.html">Home</a>
+        <a href ="restaurant.html" >Restaurant</a>
+        <a href="nightlife.html">NightLife</a>
+        <a href="candd.html" class="active">Cafe & Desserts</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="about.html">About Us</a>    
+    </div>
+    <br>
+    <div class ="main">
+         <div class="sidenav">
+                <p>Sort By</p>
+                <a href="#">Popularity</a>
+                <a href="#">Recently Added</a>
+                <a href="#">Cost - High to Low</a>
+                <a href="#">Cost - Low to High</a>
+                <p>Location</p>
+                <a href="#">Lower Parel</a>
+                <a href="#">Bandra</a>
+                <a href="#">Powai</a>
+                <p>Cuisine</p>
+                <a href="#">Bar</a> 
+                <a href="#">Night Club</a>
+                 
+        </div>
+        <div class="flex-container">
+            <div>
+                <img src ="images\Candd_Images\poetry\main.jpg">
+                    <h3>Poetry by Love and Cheesecake</h3></a>
+                <p>
+                   <b>Linking Road, Bandra West  ·  Cafe, Desserts</b>
+                </p>
+                <p>
+                    <b>Address: </b> Pali Darshan, Junction of 16th & 33rd road, 
+                    Linking Road, Bandra West
+                </p>
+                <p>
+                   <b>Phone number: </b> 
+                    +91 82912 95412 //
+                    +91 98199 35135
+                </p>
+                <p>
+                    <b>Average Cost: </b> 
+                    ₹1,000 for two people (approx.) 
+                </p>
+
+                <br><br><br>
+
+                <h3 align="center">Images</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\Candd_Images\poetry\img1.jpg" style="width:100%">
+                        <div class="text">Ambiance</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\Candd_Images\poetry\img2.jpg" style="width:100%">
+                        <div class="text">Ambiance</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\Candd_Images\poetry\img3.jpg" style="width:100%">
+                        <div class="text">Banquet</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> 
+                <div>
+                    <h3 align ="center">Review</h3>
+                    <hr>
+                    <div id ="reviewcollect">  
+                        <ul id="myList">
+                            <li>Nice Cafe With Good Ambiance</li>
+                            <li>Good Food and Excellent Service</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class ="form1" align = "center">
+                            <form>
+                                <label><b>Leave a Comment </b></label><input type="text" name="Name" id="Name">
+                                <br>
+                                <input type ="submit" value="Submit" onclick="myFunction(event);">
+                            </form>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <script>
+            function myFunction(event)
+            {
+                event.preventDefault();
+
+                var node = document.createElement("LI");
+                var x = document.getElementById("Name").value;
+                var textnode = document.createTextNode(x);
+                node.appendChild(textnode);
+                document.getElementById("myList").appendChild(node);
+                
+                /*let Name = document.getElementById("Name").value;
+                var myWindow = window.open("","_blank");
+                myWindow.document.write(`<p>The Review is ${Name}</p>`);*/
+            }
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/b.jpg.png" size="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bhukkads-Cafes & Desserts</title>
+    <link rel="stylesheet" href="CssFiles/candd.css">
+    <link rel="stylesheet" href="CssFiles/navbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    
+</head>
+<body>
+    <div class ="logo">
+        <img src = "images/b.jpg.png">
+    </div>
+    <div class ="navbar" style="position: sticky; top:0; width: 100%;">
+        <a href ="index.html">Home</a>
+        <a href ="restaurant.html" >Restaurant</a>
+        <a href="nightlife.html">NightLife</a>
+        <a href="candd.html" class="active">Cafe & Desserts</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="about.html">About Us</a>    
+    </div>
+    <br>
+    <div class ="main">
+         <div class="sidenav">
+            <p>Sort By</p>
+            <a href="#">Popularity</a>
+            <a href="#">Recently Added</a>
+            <a href="#">Cost - High to Low</a>
+            <a href="#">Cost - Low to High</a>
+            <p>Location</p>
+            <a href="#">Lower Parel</a>
+            <a href="#">Bandra</a>
+            <a href="#">Powai</a>
+            <p>Cuisine</p>
+            <a href="#">Bar</a> 
+            <a href="#">Night Club</a>
+            
+
+            
+        </div>
+        <div class="flex-container">
+            <div>
+                <img src ="images\Candd_Images\Theobroma\main.jpg">
+                <a class="rest1" href ="theobroma.html" id="click1" onmouseover="hoverin(1)" onmouseout="hoverout(1)">
+                    <h3>Theobroma</h3></a>
+                <p>
+                   <b>Powai  ·  Bakery, Desserts</b>
+                </p>
+                <p>
+                    <b>Address: </b>Shop 8, Ground Floor, City Park Building, Central Avenue, 
+                    Hiranandani Business Park, Phase 2 Dmart, Next to Kotak Bank, 
+                    Powai, Mumbai.
+                </p>
+                <p>
+                   <b>Phone number: </b> 
+                    +91 98205 10069 
+                    +91 98205 10089
+                </p>
+                <p>
+                    <b>Average Cost: </b> 
+                    ₹500 for two people (approx.). 
+                </p>
+            </div>
+
+            <div>
+                <img src ="images\Candd_Images\poetry\main.jpg">
+                <a class="rest1" href ="poetry.html" id="click2" onmouseover="hoverin(2)" onmouseout="hoverout(2)">
+                    <h3>Poetry by Love and Cheesecake</h3></a>
+                <p>
+                   <b>Linking Road, Bandra West  ·  Cafe, Desserts</b>
+                </p>
+                <p>
+                    <b>Address: </b> Pali Darshan, Junction of 16th & 33rd road, 
+                    Linking Road, Bandra West
+                </p>
+                <p>
+                   <b>Phone number: </b> 
+                    +91 82912 95412 
+                    +91 98199 35135
+                </p>
+                <p>
+                    <b>Average Cost: </b> 
+                    ₹1,000 for two people (approx.) 
+                </p>
+            </div>
+
+            <div>
+                <img src ="images\Candd_Images\lsd\main.jpg">
+                <a class="rest1" href ="lsd.html" id="click3" onmouseover="hoverin(3)" onmouseout="hoverout(3)">
+                    <h3>LSD - Love Sugar & Dough</h3></a>
+                <p>
+                   <b>Oshiwara, Andheri West   ·  Bakery</b>
+                </p>
+                <p>
+                    <b>Address: </b>
+                    2, Meera Towers, Opposite Mega Mall, Oshiwara, 
+                    Oshiwara, Andheri West
+                </p>
+                <p>
+                   <b>Phone number: </b> 
+                    022 26325333
+                    +91 98215 76616
+                </p>
+                <p>
+                    <b>Average Cost: </b> 
+                    ₹550 for two people (approx.).
+                </p>
+            </div>
+
+            <div>
+                <img src ="images/Candd_Images/Boston/main.jpg">
+                <a class="rest1" href ="boston.html" id="click3" onmouseover="hoverin(3)" onmouseout="hoverout(3)">
+                    <h3>The Boston Cupcakery</h3></a>
+                <p>
+                   <b>Andheri Lokhandwala, Andheri West   ·  Dessert Parlor, Bakery</b>
+                </p>
+                <p>
+                    <b>Address: </b>
+                    Shop 1, Legend Apartment, Near Millat Nagar Circle, 
+                    Andheri Lokhandwala, Andheri West
+                </p>
+                <p>
+                   <b>Phone number: </b> 
+                    022 40148582
+                </p>
+                <p>
+                    <b>Average Cost: </b> 
+                    ₹600 for two people (approx.).
+                </p>
+            </div>
+
+    </div>
+
+    <script>
+        function hoverin(no)
+        {
+            if(no==1)
+            {
+            var x = document.getElementById('click1');
+            x.style.color = '#bcdefa';
+            }
+            if(no ==2)
+            {
+            var y = document.getElementById('click2');
+            y.style.color = '#bcdefa';
+            }
+            if(no ==3)
+            {
+            var z = document.getElementById('click3');
+            z.style.color = '#bcdefa';
+            }
+            
+        }
+        function hoverout(no)
+        {
+            if(no==1)
+            {
+                var x = document.getElementById('click1');
+                x.style.color = 'white';
+            }
+            if(no ==2)
+            {
+            var y = document.getElementById('click2');
+            y.style.color = 'white';
+            }
+            if(no ==3)
+            {
+            var z = document.getElementById('click3');
+            z.style.color = 'white';
+            }
+        }
+    </script>
+</body>
+</html>
